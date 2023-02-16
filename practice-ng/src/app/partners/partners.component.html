@@ -1,0 +1,15 @@
+<!--ngFor-->
+<h2 *ngFor="let partner of partnersList; index as i">
+    {{ partner }}
+</h2>
+
+<!--ngIf-->
+<h1 *ngIf="ngIfBoolean">Show this if the boolean is true</h1>
+
+<!--ngClass-->
+<div [ngClass]="ngClassBoolean ? 'green-color' : 'red-color'">Make this Green if the ngClassBoolean is True and red if False</div>
+
+<!--ngStyle-->
+<div [ngStyle]="currentStyles">Show this using ngStyle and the booleans</div>
+<!--Equivalent in HTML (no conditions)-->
+<div style="font-style: italic; font-weight: bold;">Show this using css inlining</div>

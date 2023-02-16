@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
+    border-bottom: 2px solid gray;
+}
+
+button {
+    background-color: inherit;
+    border: 0;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+button:hover {
+    color: orange;
+}
+
+button:active {
+    color: purple;
+}
+
+
+

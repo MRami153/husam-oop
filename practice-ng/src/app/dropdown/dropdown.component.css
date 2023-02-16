@@ -1,0 +1,17 @@
+select {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: red;
+    appearance: none;
+}
+
+select:hover {
+    color: orange;
+}
+
+select:active {
+    color: purple;
+}
+
+

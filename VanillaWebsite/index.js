@@ -15,7 +15,6 @@ function deleteText() {
     for (const oneBox of uselessBoxes) {
         oneBox.toggleAttribute('hidden')
     }
-
 }
 
 function putBackText() {
