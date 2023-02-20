@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-partners',
@@ -23,4 +23,16 @@ export class PartnersComponent {
     'font-style': this.italicBoolean ? 'italic' : 'normal',
     'font-weight': this.boldBoolean ? 'bold' : 'normal'
   }
+
+  theId: string = 'myID'
+  //@ViewChild
+  @ViewChild('tab1Button') tab1Button!: ElementRef
+
+  // ngIf else (using ng-template)
+  showButtons: boolean = false
+
+
+  ngAfterViewInit() {
+  }
+ 
 }

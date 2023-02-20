@@ -1,6 +1,6 @@
 :host {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 4rem;
     border-bottom: 2px solid gray;
 }

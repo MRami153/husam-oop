@@ -1,6 +1,6 @@
 /*Given the array below, write a program the prints the diagonal 
 such that the output is 000001*/
-const binaryArray: string[] = [
+/*const binaryArray: string[] = [
     '912345',
     '198912',
     '219456',
@@ -30,7 +30,6 @@ if (num < binaryArray.length ) {
 		// const result: number = myNum * Math.pow(10, pow)
 		// myString = result.toString()
 	}
-
 	console.log(myString)
 	binaryArray.push(myString)
 }
@@ -38,4 +37,12 @@ else {
 	console.log('number too high!')
 }
 
-console.log(binaryArray)
+console.log(binaryArray)*/
+
+// Casting
+import { Animal } from "./Animal";
+import { Reptilian } from "./Reptilian";
+
+const reptile: Animal = new Reptilian()
+
+const castedRept: Reptilian = <Reptilian> reptile

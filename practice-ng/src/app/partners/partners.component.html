@@ -1,5 +1,5 @@
 <!--ngFor-->
-<h2 *ngFor="let partner of partnersList; index as i">
+<h2 *ngFor="let partner of partnersList">
     {{ partner }}
 </h2>
 
@@ -12,4 +12,14 @@
 <!--ngStyle-->
 <div [ngStyle]="currentStyles">Show this using ngStyle and the booleans</div>
 <!--Equivalent in HTML (no conditions)-->
-<div style="font-style: italic; font-weight: bold;">Show this using css inlining</div>
+<div style="font-style: italic; font-weight: bold;" [id]="theId">Show this using css inlining</div>
+
+<!--ngIf else (ng-template)-->
+<button (click)="showButtons = !showButtons">Show Buttons</button>
+<ng-template #ourButtons>
+    <button routerLink="contact">Contact</button>
+    <button routerLink="tab2">Tab 2</button>
+</ng-template>
+
+<div *ngIf="!showButtons; else ourButtons">No buttons to show</div>
+<router-outlet></router-outlet>
