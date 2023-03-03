@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-about',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
 })
 
 export class AboutComponent {
+  favoriteColor: FormControl = new FormControl('Please type your favorite color')
 
+  logColor() {
+    console.log(this.favoriteColor)
+  }
 }
